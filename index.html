@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <nav>
+        <p>68070017</p>
+        <h2>ITF Website</h2>
+        <p>Week 14</p>
+    </nav>
+    <div class="container">
+        <img src="unicorn.png" width="96" alt="Cool" />
+        <div>
+            <h2 id="my-title">ITF simple bank</h2>
+            <p> welcome to my first HTML + CSS + JS Website!! </p>
+        </div>
+			<hr>
+    </div>
+    <textarea class="history" id="history" rows="8" cols="106" readonly placeholder="No transactions yet..."></textarea>
+    <div class="account-overview" id="account-overview">
+        <div class="account-column">
+        <h1 class="mytext">Account Overview</h1>
+            <div class="account overview">
+                <img src="istockphoto-954726306-612x612-removebg-preview.png" width="150" alt="elseif">
+                <div class="account-info">
+                    <h3 id="account">Account Information</h3>
+                    <p>Name: Jeerawan Nuamkhayan</p>
+                    <p>type: Savings Account</p>
+                </div>
+            </div>
+
+            <div class="balance information">
+                <img src="book.png.png" width="120" alt="book">
+                <div class="balance-info">
+                    <h3 id="balance">Balance Information</h3>
+                    <p>account balance: <input type="number" id="myinputnum-ac" value="0" class="input"></p>
+                    <p>cash balance: <input type="number" id="myinputnum-cash" value="0" class="input"></p>
+                    <button onclick="change()" class="bookmarkBtn">
+                        <span class="IconContainer">
+                            <svg viewBox="0 0 384 512" height="0.9em" class="icon">
+                                <path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                                    ></path>
+                            </svg>
+                        </span>
+                        <p class="text">Change</p>
+                    </button>
+                </div>
+            </div>
+            <div class="bank-Operation">
+                <img src="money.png" width="120" alt="money">
+                <div class="bank-info">
+                    <h3 id="bank">Bank Operation</h3>
+                    <select class="operation" id="operation">
+                        <option value="deposit">Deposit</option>
+                        <option value="withdraw">Withdraw</option>
+                    </select>
+                    <input type="number" id="num-operation" value="0" class="input">
+                    <div class="proceed">
+                        <button onclick="proceed()" class="bookmarkBtn">
+                            <span class="IconContainer">
+                                <svg viewBox="0 0 384 512" height="0.9em" class="icon">
+                                    <path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                                        ></path>
+                                </svg>
+                            </span>
+                            <p class="text">Proceed</p>
+                        </button> 
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="financial-column">
+            <h1 class="mytext">Financial Tools</h1>
+            <div class="Currency Converter">
+                <img src="city-removebg-preview.png" width="100" alt="city">
+                <div class="Currency-info">
+                    <h3 id="Currency">Currency Converter</h3>
+                    <p>Input balance: <input type="number" id="myinput balance" value="0" class="input"></p>
+                    <p>Output balance: <input type="number" id="myoutputnum-balance" value="0" class="input"></p>
+                    <div class="button-group">
+                        <select class="operation" id="operationmoney">
+                            <option value="usd">USD</option>
+                            <option value="thb">THB</option>
+                        </select>
+                        <button onclick="convert()" class="bookmarkBtn">
+                            <span class="IconContainer">
+                                <svg viewBox="0 0 384 512" height="0.9em" class="icon">
+                                    <path d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+                                        ></path>
+                                </svg>
+                            </span>
+                            <p class="text">Convert</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <img src="7561ff12f98c68a132a19d7e8d7a5493.png" width="300" alt="money">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

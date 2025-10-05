@@ -1,0 +1,157 @@
+nav {
+    background: linear-gradient(90deg, #7323c8, #79dc81);
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    font-family: "Playwrite DE SAS", cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px;
+    background-color: rgb(14, 47, 61);
+    font-family: "Bitcount Single Ink", system-ui;
+}
+
+.account,
+.balance,
+.bank-Operation,
+.Currency {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    background: linear-gradient(90deg, #fb93ff, #d3e093);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.account-info {
+    text-align: left;
+}
+
+.account-overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+    gap: 30px;
+}
+
+.account-column {
+    flex: 1;
+}
+
+.financial-column {
+    flex: 1;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(38, 2, 40);
+}
+
+.operation {
+  appearance: none;
+  background: linear-gradient(90deg, #ff6ec4, #7873f5);
+  color: white;
+  font-weight: bold;
+  padding: 10px 35px 10px 15px;
+  border-radius: 12px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mytext {
+  font-family: "Bitcount Single Ink", system-ui;
+}
+
+.history {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  background-color: #d2d2d2;
+}
+
+.input {
+  padding: 3px;
+  font-size: 12px;
+  border-width: 5px;
+  border-radius: 19px;
+  background-color: #eccaf8;
+  border-color: #d36767;
+  font-size: medium;
+}
+
+.proceed {
+  margin-top: 15px;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.bookmarkBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: 0.3s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: 0.3s;
+  font-size: 1.04em;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: 0.3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: 0.3s;
+}
