@@ -10,27 +10,25 @@ function proceed() {
     const num = Number(document.getElementById("num-operation").value);
     let account = Number(document.getElementById("myinputnum-ac").value);
     let cash = Number(document.getElementById("myinputnum-cash").value);
-    if (type === "deposit") {
-        account += num;
-        cash -= num;
-    } else if (type === "withdraw") {
-        account -= num;
-        cash += num;
-    }
-
-    if (num <= 0) {
-        alert("เงินไม่เป้น0 ไม่ติดลบ");
+    if (num < 0) {
+        alert("เงินที่ไหนติดลบ");
         return;
     }
-    if (type === "deposit" && cash < num) {
-        alert("เงินสดไม่พอ");
-        return;
-    }
-    if (type === "withdraw" && account < num) {
+    if (type === "withdraw") {
+        if (account < num) {
         alert("เงินในบัญชีไม่พอ");
         return;
+        }
+        account -= num;
+        cash += num;
+    } else if (type === "deposit") {
+        if (cash < num) {
+        alert("เงินสดไม่พอ");
+        return;
+        }
+        account += num;
+        cash -= num;
     }
-
     document.getElementById("myinputnum-ac").value = account;
     document.getElementById("myinputnum-cash").value = cash;
     document.getElementById("history").value += 
