@@ -73,12 +73,13 @@ body {
 
 .mytext {
   font-family: "Bitcount Single Ink", system-ui;
+  color: #d2d2d2;
 }
 
 .history {
   font-family: 'Times New Roman', Times, serif;
   font-size: larger;
-  background-color: #d2d2d2;
+  background: linear-gradient(90deg, #dfe1c7, #73c8f5);
 }
 
 .input {

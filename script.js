@@ -17,6 +17,20 @@ function proceed() {
         account -= num;
         cash += num;
     }
+
+    if (num <= 0) {
+        alert("เงินไม่เป้น0 ไม่ติดลบ");
+        return;
+    }
+    if (type === "deposit" && cash < num) {
+        alert("เงินสดไม่พอ");
+        return;
+    }
+    if (type === "withdraw" && account < num) {
+        alert("เงินในบัญชีไม่พอ");
+        return;
+    }
+
     document.getElementById("myinputnum-ac").value = account;
     document.getElementById("myinputnum-cash").value = cash;
     document.getElementById("history").value += 
